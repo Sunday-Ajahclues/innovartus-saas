@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovartus SaaS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 { color: #667eea; margin-bottom: 10px; }
+        .status { 
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .info { 
+            color: #666;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .endpoints {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-size: 13px;
+            text-align: left;
+        }
+        .endpoints code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #764ba2; }
+        .footer { 
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Innovartus</h1>
+        <p>SaaS Platform</p>
+        
+        <div class="status">● Online</div>
+        
+        <div class="info">
+            Deployed: {{ time }}
+        </div>
+        
+        <div class="endpoints">
+            <strong>API Endpoints:</strong><br>
+            <code>/health</code> - Health check<br>
+            <code>/api/status</code> - Service status
+        </div>
+        
+        <a href="/health" class="btn" target="_blank">Check Health</a>
+        
+        <div class="footer">
+            Innovartus Technologies © 2026
+        </div>
+    </div>
+</body>
+</html>
